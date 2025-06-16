@@ -1,0 +1,220 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #9f75ff, #7c52e6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.card {
+  background-color: #3e1c92;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.search select {
+  width: 120%; 
+  padding: 0.5rem;
+  border-radius: 100px;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: white; 
+  font-size: 1em;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3e%3cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'%3e%3c/path%3e%3c/svg%3e"); /* Custom dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+.search select option {
+    background-color: #3e1c92;
+    color: white;
+}
+
+
+.icon {
+  width: 100px;
+  margin: 1rem auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0 0 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  width: 100%; 
+  margin-top: 1rem; 
+}
+
+.details p {
+    margin: 0 5px; 
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background: linear-gradient(135deg, #a77dff 0%, #7e5cff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  width: 100%; 
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; 
+}
+
+.weather-container {
+  background-color: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px); 
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  width: 350px; 
+  max-width: 90%; 
+  text-align: center; 
+}
+
+
+.weather-container h1 {
+  font-size: 4em; 
+  margin: 0;
+  line-height: 1; 
+}
+
+.weather-container h2 {
+  font-size: 1.5em; 
+  margin: 0;
+}
+
+.weather-container p {
+    margin: 5px 0; 
+    font-size: 1.1em;
+}
+
+
+.message, .error-message {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.error-message {
+  color: #ffcccc;
+  font-weight: bold;
+}
+
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 15px;
+  font-size: 1em;
+  color: white;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button svg {
+  width: 20px;
+  height: 20px;
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 1rem 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px; /* Add space for navbar */
+}
